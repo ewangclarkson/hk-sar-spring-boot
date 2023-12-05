@@ -49,13 +49,13 @@ public class UserController {
     }
 
 
-    @PostMapping("/public/signup")
+    @PostMapping("/public/register")
     public ResponseEntity<?> signUp(@RequestBody @Valid SignUpDto signUpDto) {
         userService.signUp(signUpDto);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    @PostMapping("/public/signin")
+    @PostMapping("/public/login")
     public ResponseEntity<JwtDto> signIn(@RequestBody @Valid SignInDto signInDto) {
         UsernamePasswordAuthenticationToken usernamePassword = new UsernamePasswordAuthenticationToken(signInDto.getEmail(), signInDto.getPassword());
         Authentication authUser = authenticationManager.authenticate(usernamePassword);
