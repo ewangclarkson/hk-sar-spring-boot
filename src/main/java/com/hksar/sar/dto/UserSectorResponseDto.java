@@ -24,7 +24,7 @@ public class UserSectorResponseDto {
     @AllArgsConstructor
     public static class Sector {
         private Long id;
-        private String SectorName;
+        private String sectorName;
         private SectorLevels depthType;
     }
 }

@@ -100,7 +100,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                             Sector sector = sectorRepository.findById(userSector.getSectorId()).orElseThrow(() -> new BusinessValidationException(BUSINESS_VALIDATION_FAILURE.getMessage()));
                             sectorResp = UserSectorResponseDto.Sector
                                     .builder()
-                                    .SectorName(sector.getName())
+                                    .sectorName(sector.getName())
                                     .depthType(userSector.getSectorType())
                                     .id(userSector.getId())
                                     .build();
@@ -109,7 +109,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                             MinorSector minorSector = minorSectorRepository.findById(userSector.getSectorId()).orElseThrow(() -> new BusinessValidationException(BUSINESS_VALIDATION_FAILURE.getMessage()));
                             sectorResp = UserSectorResponseDto.Sector
                                     .builder()
-                                    .SectorName(minorSector.getName())
+                                    .sectorName(minorSector.getName())
                                     .depthType(userSector.getSectorType())
                                     .id(userSector.getId())
                                     .build();
@@ -118,7 +118,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                             SubSector subSector = subSectorRepository.findById(userSector.getSectorId()).orElseThrow(() -> new BusinessValidationException(BUSINESS_VALIDATION_FAILURE.getMessage()));
                             sectorResp = UserSectorResponseDto.Sector
                                     .builder()
-                                    .SectorName(subSector.getName())
+                                    .sectorName(subSector.getName())
                                     .depthType(userSector.getSectorType())
                                     .id(userSector.getId())
                                     .build();
@@ -127,7 +127,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                             SectorCategory sectorCategory = sectorCategoryRepository.findById(userSector.getSectorId()).orElseThrow(() -> new BusinessValidationException(BUSINESS_VALIDATION_FAILURE.getMessage()));
                             sectorResp = UserSectorResponseDto.Sector
                                     .builder()
-                                    .SectorName(sectorCategory.getName())
+                                    .sectorName(sectorCategory.getName())
                                     .depthType(userSector.getSectorType())
                                     .id(userSector.getId())
                                     .build();

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: hk-sar
+  jpa:
+    hibernate:
+      ddl-auto: 'create-drop'
+    show-sql: false
+server:
+  port: 8080
+  servlet:
+    contextPath: /hk-sar-service
+security:
+  jwt:
+    token:
+      secret-key: a secrettt
+springdoc:
+  show-login-endpoint=true:
