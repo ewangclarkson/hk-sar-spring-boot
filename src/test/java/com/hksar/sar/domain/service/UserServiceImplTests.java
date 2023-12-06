@@ -1,9 +1,8 @@
-package com.hksar.sar.service;
+package com.hksar.sar.domain.service;
 
 import com.hksar.sar.constant.SectorLevels;
 import com.hksar.sar.constant.UserRole;
 import com.hksar.sar.domain.model.*;
-import com.hksar.sar.domain.service.UserServiceImpl;
 import com.hksar.sar.dto.SignUpDto;
 import com.hksar.sar.dto.UpdateUserSectorRequestDto;
 import com.hksar.sar.dto.UserSectorRequestDto;

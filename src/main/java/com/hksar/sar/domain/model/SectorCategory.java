@@ -17,6 +17,6 @@ public class SectorCategory extends BaseEntity{
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "sectorCategory")
+    @OneToMany(mappedBy = "sectorCategory",orphanRemoval = true)
     private List<SubSector> subSectors;
 }

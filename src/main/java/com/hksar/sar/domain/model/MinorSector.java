@@ -16,7 +16,7 @@ public class MinorSector extends BaseEntity {
     private Long id;
     @Column(name = "name")
     private String name;
-    @OneToMany(mappedBy = "minorSector")
+    @OneToMany(mappedBy = "minorSector",orphanRemoval = true)
     private List<Sector> sectors;
 
     @JsonIgnore

@@ -1,7 +1,6 @@
-package com.hksar.sar.service;
+package com.hksar.sar.domain.service;
 
 import com.hksar.sar.domain.model.SectorCategory;
-import com.hksar.sar.domain.service.SectorServiceImpl;
 import com.hksar.sar.repository.SectorCategoryRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

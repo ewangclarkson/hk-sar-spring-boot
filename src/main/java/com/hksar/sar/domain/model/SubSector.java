@@ -19,7 +19,7 @@ public class SubSector extends BaseEntity{
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "subSector")
+    @OneToMany(mappedBy = "subSector",orphanRemoval = true)
     private List<MinorSector> minorSectors;
 
     @JsonIgnore
