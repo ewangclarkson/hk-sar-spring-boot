@@ -3,9 +3,9 @@ spring:
     name: hk-sar
   datasource:
     driver-class-name:  com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql-32277523-ewangclarks-d301.a.aivencloud.com:14763/hk-sar?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: ewangclarks
-    password: AVNS_3iPrsg-nF_eSPw3A9vb
+    url: jdbc:mysql://localhost:3306/hk-sar?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username:
+    password:
   jpa:
     hibernate:
       ddl-auto: update
