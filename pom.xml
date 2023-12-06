@@ -10,7 +10,7 @@
         <relativePath/>
     </parent>
     <groupId>com.hksar</groupId>
-    <artifactId>sar</artifactId>
+    <artifactId>hk-sar</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Employee Registration</name>
     <description>Employee Registration Application</description>
