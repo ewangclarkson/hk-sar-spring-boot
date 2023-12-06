@@ -102,7 +102,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                                     .builder()
                                     .sectorName(sector.getName())
                                     .depthType(userSector.getSectorType())
-                                    .id(userSector.getId())
+                                    .id(userSector.getSectorId())
                                     .build();
                             break;
                         case MINOR_SECTOR:
@@ -111,7 +111,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                                     .builder()
                                     .sectorName(minorSector.getName())
                                     .depthType(userSector.getSectorType())
-                                    .id(userSector.getId())
+                                    .id(userSector.getSectorId())
                                     .build();
                             break;
                         case SUB_SECTOR:
@@ -120,7 +120,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                                     .builder()
                                     .sectorName(subSector.getName())
                                     .depthType(userSector.getSectorType())
-                                    .id(userSector.getId())
+                                    .id(userSector.getSectorId())
                                     .build();
                             break;
                         case SECTOR_CATEGORY:
@@ -129,7 +129,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                                     .builder()
                                     .sectorName(sectorCategory.getName())
                                     .depthType(userSector.getSectorType())
-                                    .id(userSector.getId())
+                                    .id(userSector.getSectorId())
                                     .build();
                             break;
 

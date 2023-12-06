@@ -15,7 +15,7 @@ public class UserSector extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "sector id")
+    @Column(name = "sector_id")
     private Long sectorId;
 
     @Column(nullable = false)
