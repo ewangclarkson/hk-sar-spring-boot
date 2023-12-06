@@ -1,11 +1,9 @@
 package com.hksar.sar.exceptions;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-/**
- * User: Edward Tanko <br/>
- * Date: 5/29/19 2:56 AM <br/>
- */
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class ResourceAlreadyExistException extends RuntimeException {
     public ResourceAlreadyExistException(String message) {

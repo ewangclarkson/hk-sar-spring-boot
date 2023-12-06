@@ -6,7 +6,6 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import lombok.Data;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDateTime;
 

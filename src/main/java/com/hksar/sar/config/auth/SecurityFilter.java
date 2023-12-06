@@ -1,6 +1,5 @@
 package com.hksar.sar.config.auth;
 
-import com.hksar.sar.domain.model.User;
 import com.hksar.sar.repository.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

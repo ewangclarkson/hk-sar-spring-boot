@@ -15,9 +15,9 @@ import java.util.Collection;
 import java.util.List;
 
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-@EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
 public class User extends BaseEntity implements UserDetails {
