@@ -28,8 +28,9 @@ public class UserServiceImpl implements UserService {
     private final SubSectorRepository subSectorRepository;
 
     @Override
+    @Transactional
     public UserSectorResponseDto createUserSector(CreateUserSectorRequestDto userSectorRequestDto) {
-        Optional<User> userOptional = userRepository.findUserByNameIgnoreCase(userSectorRequestDto.getName());
+        Optional<User> userOptional = userRepository.findUserByNameIgnoreCase(userSectorRequestDto.getName().trim());
         User user = getUpdatedUser(userOptional.orElseGet(User::new), userSectorRequestDto);
         return getUserSectorResponseDto(userSectorRequestDto, user);
     }
@@ -38,6 +39,8 @@ public class UserServiceImpl implements UserService {
         user.setName(userSectorRequestDto.getName());
         user.setAgreeTerms(true);
         user = userRepository.save(user);
+        System.out.println("\n\n\n\n\n");
+        System.out.println(user);
         if (userSectorRepository.existsByUserId(user.getId())) userSectorRepository.deleteAllByUserId(user.getId());
         return user;
     }
