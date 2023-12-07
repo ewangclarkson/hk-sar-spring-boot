@@ -10,7 +10,7 @@ import lombok.Data;
 import java.util.Set;
 
 @Data
-public class UpdateUserSectorRequestDto {
+public class CreateUserSectorRequestDto {
     @NotEmpty(message = "The username is required")
     private String name;
     @NotEmpty(message = "Sector cannot be empty")

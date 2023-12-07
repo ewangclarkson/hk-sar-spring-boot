@@ -5,7 +5,6 @@ import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import lombok.Data;
-import org.springframework.security.core.context.SecurityContextHolder;
 
 import java.time.LocalDateTime;
 
@@ -35,12 +34,6 @@ public class BaseEntity {
     }
 
     void addUpdatedByUser() {
-        try {
-            Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-            User user = (User) principal;
-            this.updatedBy = user.getName() + "<" + user.getUsername() + ">";
-        } catch (Exception ex) {
-            this.updatedBy = "Default";
-        }
+        this.updatedBy = "Default";
     }
 }

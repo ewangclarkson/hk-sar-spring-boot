@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 07, 2023 at 10:00 AM
+-- Generation Time: Dec 07, 2023 at 11:39 AM
 -- Server version: 8.0.35-0ubuntu0.22.04.1
 -- PHP Version: 8.1.2-1ubuntu2.14
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `hk-sar`
+-- Database: `hk-sar-db`
 --
 
 -- --------------------------------------------------------

@@ -8,7 +8,6 @@ import java.util.List;
 
 @Repository
 public interface UserSectorRepository extends JpaRepository<UserSector,Long> {
-    List<UserSector> findAllByUserId(Long userId);
     void deleteAllByUserId(Long userId);
     Boolean existsByUserId(Long userId);
 }
