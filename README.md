@@ -51,7 +51,7 @@ mvn spring-boot:run
 
 ###Access The Application
 Open your web browser and visit http://localhost:8080 to access the application.
-To access the application on line, visit the link https://hong-kong-sar.onrender.com
+To access the application online, visit the link https://hong-kong-sar.onrender.com
 
 
 
