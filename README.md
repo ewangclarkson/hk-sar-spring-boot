@@ -30,7 +30,7 @@ git clone https://github.com/ewangclarkson/hk-sar-spring-boot.git
 ####Navigate to the project directory:
 
 ```
-cd hk-sar-spring-boot-athentication
+cd hk-sar-spring-boot
 ```
 
 ###Install the dependencies:
@@ -48,21 +48,11 @@ Start the development server:
 mvn spring-boot:run
 ```
 
-
 ###Access The Application
 Open your web browser and visit http://localhost:8080 to access the application.
-To access the application online, visit the link https://hong-kong-sar.onrender.com
-
-
+To access the application online, visit the link https://hk-sar.onrender.com
 
 ## Features
-The application includes the following features:
-
-### Authentication and Authorization
-   #####Account Creation
-        Create an account if you don't have one
-   ##### Authentication
-        Login to your account with your credentials
 
 ### Employee Sector Registration
  Employees are required to enter their sectors information and register or edit if the already are under one.
