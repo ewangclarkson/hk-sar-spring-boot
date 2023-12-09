@@ -13,27 +13,27 @@ Make sure you have the following software installed on your system and have clon
 
  ``IDE compatible with Java 17 (IntelliJ preferable)``
 
-###Installation
+### Installation
 Clone this repository to your local machine:
 
-#####React Front End
+##### React Front End
 ```
 git clone https://github.com/ewangclarkson/hk-sar-react.git
 ```
 
 
-#####Spring boot backend
+##### Spring boot backend
 ```
 git clone https://github.com/ewangclarkson/hk-sar-spring-boot.git
 ```
 
-####Navigate to the project directory:
+#### Navigate to the project directory:
 
 ```
 cd hk-sar-spring-boot
 ```
 
-###Install the dependencies:
+### Install the dependencies:
 
 ```
 mvn install
@@ -41,14 +41,14 @@ mvn install
 ### Import Database
   Create a database call hk-sar and import the .sql script found in the docs folder
   Update the .env file in the root folder of the application with the proper database credentials
-###Usage
+### Usage
 Start the development server:
 
 ```
 mvn spring-boot:run
 ```
 
-###Access The Application
+### Access The Application
 Open your web browser and visit http://localhost:8080 to access the application.
 To access the application online, visit the link https://hk-sar.onrender.com
 
@@ -58,8 +58,8 @@ To access the application online, visit the link https://hk-sar.onrender.com
  Employees are required to enter their sectors information and register or edit if the already are under one.
 
   Access the swagger documentation via the link  http://localhost:8080/hk-sar-service/swagger-ui/index.html
-##Contributing
+## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-##License
+## License
 This project is licensed under the MIT license.
