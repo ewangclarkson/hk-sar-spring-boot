@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  hk-sar-spring-boot:
+    image: hk-sar-sb
+    container_name: hk-sar-sb
+    build:
+      context: .
+    ports:
+      - 8080:8080
+    restart: always
+    environment:
+      - DB_HOST=mysql-32277523-ewangclarks-d301.a.aivencloud.com
+      - DB_PORT=14763
+      - DB_NAME=hk-sar-db
+      - DB_USERNAME=ewangclarks
+      - DB_PASSWORD=AVNS_3iPrsg-nF_eSPw3A9vb
+
+
+
+
+
