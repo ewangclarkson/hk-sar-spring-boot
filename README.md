@@ -40,7 +40,7 @@ mvn install
 ```
 ### Import Database
   Create a database call hk-sar and import the .sql script found in the docs folder
-  Update the application.yml file with the proper database credentials
+  Update the .env file in the root folder of the application with the proper database credentials
 ###Usage
 Start the development server:
 
